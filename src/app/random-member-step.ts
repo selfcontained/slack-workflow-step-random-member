@@ -8,7 +8,7 @@ export const configureRandomMemberStep = (bolt: App): void => {
         ack();
 
         console.log("edit step: ", step);
-        const channel = step.inputs?.channel?.value ?? "";
+        const channel = step.inputs?.channel?.value ?? undefined;
 
         configure({
           blocks: [
